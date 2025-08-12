@@ -1,0 +1,19 @@
+# Treat R Markdown as R
+*.Rmd linguist-language=R
+*.qmd linguist-language=R
+*.R  linguist-language=R
+*.r  linguist-language=R
+
+# Exclude data & generated artifacts from language stats
+data/** linguist-detectable=false
+*.csv linguist-generated
+*.tsv linguist-generated
+*.pdf linguist-generated
+*.html linguist-generated
+
+# Docs / vendored / CI shouldn’t count
+docs/**    linguist-documentation
+vendor/**  linguist-vendored
+.github/** linguist-generated
+*.yml      linguist-generated
+*.yaml     linguist-generated
